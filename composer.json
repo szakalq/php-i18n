@@ -1,0 +1,25 @@
+{
+    "name": "szakalq/php-i18n",
+    "type": "library",    
+    "description": "PHP Internationalization",
+    "homepage": "https://github.com/szakalq/php-i18n",    
+    "keywords": ["internationalization","i18n"],        
+    "license": "MIT",
+    "authors": [
+    		{
+            "name": "Philipp15b",
+            "email": "github@philworld.de",
+            "role": "developer"
+        },
+        {
+            "name": "szakalq",
+            "role": "Developer"
+        }
+    ],    
+    "require": {
+        "mustangostang/spyc": "0.5.*@dev"
+    },
+    "autoload": {
+        "files": ["src/i18n.class.php"]
+    }    
+}
