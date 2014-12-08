@@ -21,6 +21,5 @@
     },
     "autoload": {
         "files": ["src/i18n.class.php"]
-    },
-    "minimum-stability": "dev"   
+    }
 }
