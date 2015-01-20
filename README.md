@@ -5,6 +5,8 @@ Original project: https://github.com/Philipp15b/php-i18n
 - add composer support
 - add autoload spyc library (https://github.com/mustangostang/spyc)
 
+- L:: change to Lang::
+
 # PHP i18n
 This is a simple i18n class for PHP. Nothing fancy, but fast, because it uses caching and it is easy to use. Try it out!
 
@@ -12,7 +14,7 @@ Some of its features:
 
 * Translations in ini-files
 * File caching
-* Simple API (`L::category_stringname`)
+* Simple API (`Lang::category_stringname`)
 * Automatic finding out what language to use
 * Simplicity ;)
 
@@ -77,7 +79,7 @@ The possible settings are:
 * Cache file path (default: `./langcache/`)
 * The fallback language, if no one of the user languages is available (default: `en`)
 * A forced language, if you want to force a language (default: none)
-* The ini section seperator: this is used to seperate the sections in the language class. If you set the seperator to `_abc_` you could access your localized strings via `L::category_abc_stringname` if you use categories in your ini. (default: `_`)
+* The ini section seperator: this is used to seperate the sections in the language class. If you set the seperator to `_abc_` you could access your localized strings via `Lang::category_abc_stringname` if you use categories in your ini. (default: `_`)
 
 ```php
 <?php
@@ -118,16 +120,16 @@ Call the `init()` file to instruct the class to load the needed language file, t
 ```
 
 ### 6. Use the localizations
-To call your localizations, simple use the `L` class and a class constant for the string.
+To call your localizations, simple use the `Lang` class and a class constant for the string.
 
 In this example, we use the translation string seen in step 1.
 
 ```php
 <?php
-	echo L::greeting;
+	echo Lang::greeting;
 	// If 'en' is applied: 'Hello World'
 
-	echo L::category_somethingother;
+	echo Lang::category_somethingother;
 	// If 'en' is applied: 'Something other...'
 ?>
 ```
